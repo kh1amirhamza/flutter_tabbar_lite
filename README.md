@@ -43,7 +43,7 @@ flutter pub get
 
 ```dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tab_bar/flutter_tab_bar.dart';
+import 'package:flutter_tab_bar/flutter_custom_tabbar.dart';
 
 void main() => runApp(const MyApp());
 

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_tab_bar/flutter_tab_bar.dart';
+import 'package:flutter_tab_bar/flutter_custom_tabbar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -41,7 +41,7 @@ class TabBarExamplesPage extends StatelessWidget {
             'Example 1: Scrollable TabBar with Gradient',
             style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
           ),
-          FlutterTabBar(
+          FlutterCustomTabBar(
             enableScroll: true,
             titles: const [
               "Home",
@@ -68,7 +68,7 @@ class TabBarExamplesPage extends StatelessWidget {
             'Example 2: TabBar with Icons',
             style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
           ),
-          FlutterTabBar(
+          FlutterCustomTabBar(
             titles: const ["Home", "Profile", "Settings"],
             prefixIcons: const [
               Icons.home_outlined,
@@ -86,7 +86,7 @@ class TabBarExamplesPage extends StatelessWidget {
             'Example 3: Custom Colors and Padding',
             style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
           ),
-          FlutterTabBar(
+          FlutterCustomTabBar(
             titles: const ["Tab A", "Tab B", "Tab C"],
             selectedTextColor: Colors.blue,
             unselectedItemTextColor: Colors.black87,
