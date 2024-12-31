@@ -1,0 +1,14 @@
+name: flutter_tab_bar
+description: A custom tab bar widget with animation and dynamic features.
+version: 0.0.1
+homepage: https://github.com/kh1amirhamza/flutter_tab_bar
+
+environment:
+  sdk: ">=2.17.0 <4.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_test:
+    sdk: flutter
