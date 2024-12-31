@@ -2,7 +2,7 @@ library flutter_custom_tabbar;
 
 import 'package:flutter/material.dart';
 
-class FlutterCustomTabBar extends StatefulWidget {
+class FlutterTabBarLite extends StatefulWidget {
   final bool enableScroll;
   final List<String> titles;
   final List<IconData>? prefixIcons;
@@ -21,7 +21,7 @@ class FlutterCustomTabBar extends StatefulWidget {
   final double iconSize;
   final double? spaceBetweenIconAndText;
 
-  const FlutterCustomTabBar({
+  const FlutterTabBarLite({
     super.key,
     this.enableScroll = false,
     this.titles = const ["Tab 1", "Tab 2", "Tab 3"],
@@ -43,10 +43,10 @@ class FlutterCustomTabBar extends StatefulWidget {
   });
 
   @override
-  State<FlutterCustomTabBar> createState() => _FlutterCustomTabBarState();
+  State<FlutterTabBarLite> createState() => _FlutterTabBarLiteState();
 }
 
-class _FlutterCustomTabBarState extends State<FlutterCustomTabBar> {
+class _FlutterTabBarLiteState extends State<FlutterTabBarLite> {
   final ValueNotifier<bool> isStart = ValueNotifier(true);
   final ValueNotifier<int> selectedTabIndex = ValueNotifier<int>(0);
   @override
