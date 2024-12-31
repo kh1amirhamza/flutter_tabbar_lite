@@ -1,6 +1,6 @@
-# Flutter Tab Bar Example
+# FlutterTabBarLite Example
 
-This example demonstrates how to use the `FlutterTabBar` package with various customization options.
+This example demonstrates how to use the `FlutterTabBarLite` package with various customization options.
 
 ## How to Run
 

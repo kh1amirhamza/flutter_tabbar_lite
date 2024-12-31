@@ -150,7 +150,7 @@ flutter run
 
 ## Feedback
 
-If you encounter any issues or have suggestions, feel free to create an issue in the [GitHub repository](https://github.com/kh1amirhamza/flutter_tab_bar).
+If you encounter any issues or have suggestions, feel free to create an issue in the [GitHub repository](https://github.com/kh1amirhamza/flutter_tabbar_lite).
 ```
 
 ---
