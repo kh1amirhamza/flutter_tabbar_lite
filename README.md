@@ -1,4 +1,3 @@
-Here's a complete **README.md** for your Flutter Tab Bar library:
 
 ---
 
@@ -6,7 +5,7 @@ Here's a complete **README.md** for your Flutter Tab Bar library:
 # Flutter Tab Bar
 
 A fully customizable and animated tab bar widget for Flutter applications. Designed to make navigation intuitive and visually appealing, this package is perfect for creating modern and dynamic tab interfaces.
-
+![Demo](assets/flutter_tabbar_lite.gif)
 ---
 
 ## Features
@@ -17,6 +16,7 @@ A fully customizable and animated tab bar widget for Flutter applications. Desig
 - **Gradient Backgrounds**: Apply gradients for a modern look.
 - **Responsive Design**: Fully responsive for various screen sizes.
 - **Tab Change Callback**: Get notified when the user switches tabs.
+- **Tab Axis Horizontal & Vertical**: Horizontal and Vertical Tabs.
 
 ---
 
