@@ -7,7 +7,7 @@
 A fully customizable and animated tab bar widget for Flutter applications. Designed to make navigation intuitive and visually appealing, this package is perfect for creating modern and dynamic tab interfaces.
 
 
-<img src="assets/flutter_tabbar_lite.gif" width="336" style="height: auto;" alt="Demo">
+<img src="assets/flutter_tabbar_lite.gif" width="200" style="height: auto;" alt="Demo">
 ![Demo](assets/flutter_tabbar_lite.gif)
 
 
@@ -30,7 +30,7 @@ Add the following to your `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  flutter_tabbar_lite: ^0.0.2
+  flutter_tabbar_lite: ^0.0.3
 ```
 
 Run the command to fetch the package:
