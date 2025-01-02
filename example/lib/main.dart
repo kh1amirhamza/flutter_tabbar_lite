@@ -140,7 +140,7 @@ class TabBarExamplesPage extends StatelessWidget {
           ),
           const SizedBox(height: 32),
           const Text(
-            'Example 5: Only Icon with gradient , AnimateSize: false',
+            'Example 5: Circular Tabs with Icon , AnimateSize: false',
             style: TextStyle(
               fontSize: 14,
               fontWeight: FontWeight.w500,
@@ -148,6 +148,8 @@ class TabBarExamplesPage extends StatelessWidget {
           ),
           const SizedBox(height: 8),
           FlutterTabBarLite.horizontal(
+            borderRadius: 32,
+            itemBorderRadius: 32,
             gradient: const LinearGradient(
               colors: [Colors.indigo, Colors.pink],
               begin: Alignment.centerLeft,

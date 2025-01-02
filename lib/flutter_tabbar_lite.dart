@@ -20,6 +20,8 @@ class FlutterTabBarLite extends StatefulWidget {
   final EdgeInsets padding;
   final EdgeInsets itemPadding;
   final EdgeInsets itemMargin;
+  final double borderRadius;
+  final double itemBorderRadius;
   final double iconSize;
   final double? spaceBetweenIconAndText;
   final Axis axis;
@@ -75,6 +77,8 @@ class FlutterTabBarLite extends StatefulWidget {
     this.alignment,
     this.verticalDirection,
     required this.animateItemSize,
+    required this.borderRadius,
+    required this.itemBorderRadius,
   });
 
   //factory for horizontal tab
@@ -102,6 +106,8 @@ class FlutterTabBarLite extends StatefulWidget {
     double iconSize = 20.0,
     double? spaceBetweenIconAndText = 4.0,
     bool animateItemSize = true,
+    double borderRadius = 8,
+    double itemBorderRadius = 4,
   }) {
     return FlutterTabBarLite._internal(
       key: key,
@@ -126,6 +132,8 @@ class FlutterTabBarLite extends StatefulWidget {
       selectedFontSize: selectedFontSize,
       unselectedFontSize: unselectedFontSize,
       animateItemSize: animateItemSize,
+      borderRadius: borderRadius,
+      itemBorderRadius: itemBorderRadius,
     );
   }
 
@@ -155,6 +163,8 @@ class FlutterTabBarLite extends StatefulWidget {
     double selectedFontSize = 16,
     double unselectedFontSize = 14,
     bool animateItemSize = true,
+    double borderRadius = 8,
+    double itemBorderRadius = 4,
   }) {
     return FlutterTabBarLite._internal(
       key: key,
@@ -181,6 +191,8 @@ class FlutterTabBarLite extends StatefulWidget {
       selectedFontSize: selectedFontSize,
       unselectedFontSize: unselectedFontSize,
       animateItemSize: animateItemSize,
+      borderRadius: borderRadius,
+      itemBorderRadius: itemBorderRadius,
     );
   }
 
@@ -225,7 +237,7 @@ class _FlutterTabBarLiteState extends State<FlutterTabBarLite> {
           padding: widget.padding,
           decoration: BoxDecoration(
               color: widget.gradient == null ? widget.backgroundColor : null,
-              borderRadius: BorderRadius.circular(8),
+              borderRadius: BorderRadius.circular(widget.borderRadius),
               gradient: widget.gradient),
           child: (widget.axis == Axis.vertical)
               ? Wrap(
@@ -239,9 +251,10 @@ class _FlutterTabBarLiteState extends State<FlutterTabBarLite> {
                           isAllNull ? backUpTabs[index] : widget.titles?[index],
                       index: index,
                       selectedTabIndexValue: selectedTabIndexValue,
-                      selectedFontSize: 16,
-                      unselectedFontSize: 14,
+                      selectedFontSize: widget.selectedFontSize,
+                      unselectedFontSize: widget.unselectedFontSize,
                       animateItemSize: widget.animateItemSize,
+                      itemBorderRadius: widget.itemBorderRadius,
                     );
                   }),
                 )
@@ -275,9 +288,10 @@ class _FlutterTabBarLiteState extends State<FlutterTabBarLite> {
                                       : widget.titles?[index],
                                   index: index,
                                   selectedTabIndexValue: selectedTabIndexValue,
-                                  selectedFontSize: 16,
-                                  unselectedFontSize: 14,
+                                  selectedFontSize: widget.selectedFontSize,
+                                  unselectedFontSize: widget.unselectedFontSize,
                                   animateItemSize: widget.animateItemSize,
+                                  itemBorderRadius: widget.itemBorderRadius,
                                 );
                               }),
                             ),
@@ -306,6 +320,7 @@ class _FlutterTabBarLiteState extends State<FlutterTabBarLite> {
     required double? selectedFontSize,
     required double? unselectedFontSize,
     required bool animateItemSize,
+    required double itemBorderRadius,
   }) {
     return FlutterTabItem(
       fontSize: selectedTabIndexValue == index ? 14 : 12,
@@ -334,6 +349,7 @@ class _FlutterTabBarLiteState extends State<FlutterTabBarLite> {
       textColor: selectedTabIndexValue == index
           ? widget.selectedTextColor
           : widget.unselectedItemTextColor,
+      borderRadius: itemBorderRadius,
     );
   }
 
@@ -366,7 +382,6 @@ class FlutterTabItem extends StatelessWidget {
   final String? title;
   final IconData? prefixIcon;
   final IconData? suffixIcon;
-  //final bool isSelected;
   final Color textColor;
   final double fontSize;
   final Color backgroundColor;
@@ -374,6 +389,7 @@ class FlutterTabItem extends StatelessWidget {
   final EdgeInsets margin;
   final double iconSize;
   final double? spaceBetweenIconAndText;
+  final double borderRadius;
 
   const FlutterTabItem({
     super.key,
@@ -388,6 +404,7 @@ class FlutterTabItem extends StatelessWidget {
     required this.margin,
     required this.iconSize,
     required this.spaceBetweenIconAndText,
+    this.borderRadius = 4,
   });
 
   @override
@@ -399,7 +416,7 @@ class FlutterTabItem extends StatelessWidget {
         child: Container(
           margin: margin,
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(4),
+            borderRadius: BorderRadius.circular(borderRadius),
             color: backgroundColor,
           ),
           padding: padding,
