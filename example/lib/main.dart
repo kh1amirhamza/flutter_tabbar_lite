@@ -36,7 +36,10 @@ class TabBarExamplesPage extends StatelessWidget {
           const SizedBox(height: 16),
           const Text(
             'Example 1: Scrollable Horizontal TabBar with Gradient',
-            style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500,),
+            style: TextStyle(
+              fontSize: 14,
+              fontWeight: FontWeight.w500,
+            ),
           ),
           const SizedBox(height: 8),
           FlutterTabBarLite.horizontal(
@@ -59,15 +62,15 @@ class TabBarExamplesPage extends StatelessWidget {
               print("Scrollable TabBar - Selected Tab: $index");
             },
           ),
-
           const SizedBox(height: 32),
           const Text(
             'Example 2: Vertical TabBar ',
-            style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500,),
+            style: TextStyle(
+              fontSize: 14,
+              fontWeight: FontWeight.w500,
+            ),
           ),
           const SizedBox(height: 8),
-
-
           FlutterTabBarLite.vertical(
             itemMargin: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
             titles: const [
@@ -88,15 +91,15 @@ class TabBarExamplesPage extends StatelessWidget {
               print("Selected Tab: $index");
             },
           ),
-
           const SizedBox(height: 32),
           const Text(
             'Example 3: Text with prefix Icon || Solid Background',
-            style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500,),
+            style: TextStyle(
+              fontSize: 14,
+              fontWeight: FontWeight.w500,
+            ),
           ),
           const SizedBox(height: 8),
-
-
           FlutterTabBarLite.horizontal(
             titles: const ["Home", "Profile", "Settings"],
             prefixIcons: const [
@@ -109,14 +112,14 @@ class TabBarExamplesPage extends StatelessWidget {
             },
           ),
           const SizedBox(height: 32),
-
           const Text(
             'Example 4: Suffix Icon Custom Colors and Padding',
-            style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500,),
+            style: TextStyle(
+              fontSize: 14,
+              fontWeight: FontWeight.w500,
+            ),
           ),
           const SizedBox(height: 8),
-
-
           FlutterTabBarLite.horizontal(
             titles: const ["Tab A", "Tab B", "Tab C"],
             selectedTextColor: Colors.white,
@@ -128,23 +131,22 @@ class TabBarExamplesPage extends StatelessWidget {
               Icons.home_outlined,
               Icons.person_outline,
               Icons.settings_outlined,
-              ],
+            ],
             itemPadding:
                 const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
             onTabChange: (index) {
               print("Selected Tab: $index");
             },
           ),
-
-
           const SizedBox(height: 32),
           const Text(
             'Example 5: Only Icon with gradient , AnimateSize: false',
-            style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500,),
+            style: TextStyle(
+              fontSize: 14,
+              fontWeight: FontWeight.w500,
+            ),
           ),
           const SizedBox(height: 8),
-
-
           FlutterTabBarLite.horizontal(
             gradient: const LinearGradient(
               colors: [Colors.indigo, Colors.pink],
@@ -157,7 +159,8 @@ class TabBarExamplesPage extends StatelessWidget {
               Icons.person_outline,
               Icons.settings_outlined,
             ],
-            itemPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+            itemPadding:
+                const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
             onTabChange: (index) {
               print("Selected Tab: $index");
             },

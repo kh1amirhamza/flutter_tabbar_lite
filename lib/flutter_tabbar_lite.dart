@@ -234,11 +234,9 @@ class _FlutterTabBarLiteState extends State<FlutterTabBarLite> {
                   spacing: 0,
                   verticalDirection: widget.verticalDirection!,
                   children: List<Widget>.generate(itemsCount, (index) {
-
-
                     return _buildTabItem(
-                      title: isAllNull
-                          ? backUpTabs[index] : widget.titles?[index],
+                      title:
+                          isAllNull ? backUpTabs[index] : widget.titles?[index],
                       index: index,
                       selectedTabIndexValue: selectedTabIndexValue,
                       selectedFontSize: 16,
