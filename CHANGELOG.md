@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.0.1] - 2024-12-31
 ### Added
-- Initial release of `flutter_tab_bar`.
+- Initial release of `flutter_tabbar_lite`.
 - **Customizable Titles**: Add unique titles to each tab.
 - **Icon Support**: Include prefix and suffix icons for enhanced aesthetics.
 - **Scrollable & Fixed Layouts**: Choose between scrollable and fixed tab bar layouts.

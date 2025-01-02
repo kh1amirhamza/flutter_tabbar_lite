@@ -1,6 +1,6 @@
 name: flutter_tabbar_lite
 description: A custom tab bar widget with animation and dynamic features.
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/kh1amirhamza/flutter_tabbar_lite
 
 environment:
