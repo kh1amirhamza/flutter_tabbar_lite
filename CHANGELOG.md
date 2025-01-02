@@ -14,3 +14,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Gradient Backgrounds**: Apply gradients for a modern look.
 - **Responsive Design**: Fully responsive for various screen sizes.
 - **Tab Change Callback**: Get notified when the user switches tabs.
+
+
+## [0.0.2] - 2025-01-02
+### Added
+
+- **Item Size Animation**: Added Size animation of tab item.
+- **Horizontal and Vertical Axis**: Tab can be displayed in horizontal and vertical axis.
