@@ -7,7 +7,8 @@
 A fully customizable and animated tab bar widget for Flutter applications. Designed to make navigation intuitive and visually appealing, this package is perfect for creating modern and dynamic tab interfaces.
 
 
-<img src="assets/flutter_tabbar_lite.gif" width="400" style="height: auto;" alt="Demo">
+<img src="assets/flutter_tabbar_lite.webp" width="400" style="height: auto;" alt="FlutterTabBarLite">
+
 
 
 ## Features
