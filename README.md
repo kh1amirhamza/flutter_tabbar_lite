@@ -7,9 +7,7 @@
 A fully customizable and animated tab bar widget for Flutter applications. Designed to make navigation intuitive and visually appealing, this package is perfect for creating modern and dynamic tab interfaces.
 
 
-<img src="assets/flutter_tabbar_lite.gif" width="200" style="height: auto;" alt="Demo">
-![Demo](assets/flutter_tabbar_lite.gif)
-
+<img src="assets/flutter_tabbar_lite.gif" width="336" style="height: auto;" alt="Demo">
 
 
 ## Features
@@ -149,7 +147,12 @@ class MyApp extends StatelessWidget {
 | `selectedTextColor`       | `Color`                | `Colors.black87`        | Color for the selected tab's text.                           |
 | `unselectedItemTextColor` | `Color`                | `Colors.white`          | Color for unselected tab's text.                             |
 | `gradient`                | `LinearGradient?`      | `null`                  | Gradient applied to the tab bar.                             |
+| `borderRadius`            | `double?`              | `8.0`                   | Border radius for TabBar                                     |
+| `itemBorderRadius`        | `double?`              | `4.0`                   | Border radius for TabBar Item                                |
+| `itemMargin`              | `EdgeInsets?`          | `null`                  | Margin for TabBar Item                                       |
 | `onTabChange`             | `Function(int)?`       | `null`                  | Callback function invoked on tab change.                     |
+| `horizontal`              | `constructor`          | `null`                  | Constructor to use horizontal tab bar                        |
+| `vertical`                | `constructor`          | `null`                  | Constructor to use vertical TabBar                           |
 
 
 
@@ -159,7 +162,7 @@ class MyApp extends StatelessWidget {
 
 ## Contributions
 
-Contributions are welcome! Please fork the repository, make your changes, and submit a pull request. Refer to the `CONTRIBUTING.md` for more details.
+Contributions are welcome! Please fork the repository, make changes, and submit a pull request. Refer to the `CONTRIBUTING.md` for more details.
 
 ---
 
@@ -189,4 +192,4 @@ flutter run
 
 ## Feedback
 
-If you encounter any issues or have suggestions, feel free to create an issue in the [GitHub repository](https://github.com/kh1amirhamza/flutter_tabbar_lite).
+If you encounter any issues or have suggestions, please create an issue in the [GitHub repository](https://github.com/kh1amirhamza/flutter_tabbar_lite).
