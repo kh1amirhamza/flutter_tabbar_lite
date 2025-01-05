@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.0.4] - 2025-01-05
 ### Updated
 
-- **README.md**: Updated necessary information.
+- **README.md**: Updated Example Gif.
 
 ## [0.0.3] - 2025-01-02
 ### Added
