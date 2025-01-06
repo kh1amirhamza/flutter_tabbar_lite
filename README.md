@@ -10,6 +10,7 @@ A fully customizable and animated tab bar widget for Flutter applications. Desig
 <img src="assets/flutter_tabbar_lite.gif" width="400" style="height: auto;" alt="FlutterTabBarLite">
 <img src="assets/flutter_tabbar_lite.gif" width="800" style="height: auto;" alt="FlutterTabBarLite">
 
+![Demo](assets/flutter_tabbar_lite.gif)
 
 
 ## Features
