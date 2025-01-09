@@ -11,7 +11,7 @@ A fully customizable and animated tab bar widget for Flutter applications. Desig
 
 ## Features
 
-- **Customizable Titles**: Add unique titles to each tab.
+- **Customizable Titles**: Unique titles to each tab.
 - **Icon Support**: Include prefix and suffix icons for enhanced aesthetics.
 - **Scrollable & Fixed Layouts**: Choose between scrollable and fixed tab bar layouts.
 - **Gradient Backgrounds**: Apply gradients for a modern look.
@@ -27,7 +27,7 @@ Add the following to your `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  flutter_tabbar_lite: ^0.0.4
+  flutter_tabbar_lite: ^0.0.6
 ```
 
 Run the command to fetch the package:
@@ -174,7 +174,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## Author
 
 Developed with ❤️ by **Khandakar Amir Hamza**  
-[GitHub Profile](https://github.com/kh1amirhamza) | [Portfolio](https://amir-hamza.com)
+[GitHub Profile](https://github.com/kh1amirhamza) | [Portfolio:amirhamza.com](https://amir-hamza.com)
 
 ---
 
